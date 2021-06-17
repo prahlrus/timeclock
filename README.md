@@ -8,6 +8,8 @@ This is a simple implementation of an Employee time clock using a Jersey servlet
  - POST /api/employees/{id}/start: creates a shift, starting now, for the employee if they do not have an active shift currently and returns it if successful.
  - POST /api/employees/{id}/end: ends the current shift of an employee, if they have an active shift, and returns the updated shift data if successful.
 
+To run the backend, `cd backend/` and `mvn clean package` to create the WAR. Then deploy the WAR to a container of your choice (tested with Apache Tomcat 10.6).
+
 # Current State
 
 To be honest, a lot of work remains to be done here:
